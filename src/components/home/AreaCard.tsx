@@ -11,7 +11,7 @@ interface AreaCardProps {
 
 export default function AreaCard({ title, description, icon, route, color }: AreaCardProps) {
   return (
-    <a href={route} target="_blank" rel="noopener noreferrer" className="block group">
+    <a href={`#${route}`} target="_blank" rel="noopener noreferrer" className="block group">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
