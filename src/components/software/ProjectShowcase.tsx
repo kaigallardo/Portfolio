@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, Play } from 'lucide-react'; // <-- Añadido 'Play' aquí
 import GithubIcon from '../common/GithubIcon';
 
 interface ProjectShowcaseProps {
@@ -9,7 +9,9 @@ interface ProjectShowcaseProps {
   features: string[];
   image?: string;
   demoUrl?: string;
-  demoLabel?: string; // <-- Nuevo prop opcional
+  demoLabel?: string;
+  videoUrl?: string;       // <-- Nueva prop para el vídeo
+  videoLabel?: string;     // <-- Nueva prop para el texto del botón de vídeo
   githubUrl?: string;
   reverse?: boolean;
 }
@@ -21,7 +23,9 @@ export default function ProjectShowcase({
   features,
   image,
   demoUrl,
-  demoLabel = "Demo", // <-- Valor por defecto
+  demoLabel = "Demo",
+  videoUrl,
+  videoLabel = "Ver Vídeo",
   githubUrl,
   reverse = false,
 }: ProjectShowcaseProps) {
@@ -98,8 +102,20 @@ export default function ProjectShowcase({
               ))}
             </ul>
 
-            {/* Botones */}
+            {/* Botones (Ahora soporta hasta 3) */}
             <div className="flex flex-wrap gap-4">
+              {videoUrl && (
+                <a
+                  href={videoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-red-600 hover:bg-red-500 text-white font-medium rounded-lg transition-all duration-300 hover:scale-105"
+                >
+                  <Play className="w-4 h-4 fill-current" />
+                  {videoLabel}
+                </a>
+              )}
+              
               {demoUrl && (
                 <a
                   href={demoUrl}
@@ -111,6 +127,7 @@ export default function ProjectShowcase({
                   {demoLabel}
                 </a>
               )}
+              
               {githubUrl && (
                 <a
                   href={githubUrl}

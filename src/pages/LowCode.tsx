@@ -36,7 +36,7 @@ export default function LowCode() {
           'Historial completo de asistencia y cambios',
         ]}
         image={agoraImg}
-        demoUrl="#"
+        demoUrl="https://youtu.be/u8CjQVFIzG4"
         demoLabel="Ver demostración en vídeo"
       />
 
@@ -54,7 +54,7 @@ export default function LowCode() {
           'Dashboards con KPIs semanales de cumplimiento',
         ]}
         image={auditoriasImg}
-        demoUrl="#"
+        demoUrl="https://youtu.be/Xqr-WkDwixo"
         demoLabel="Ver demostración en vídeo"
         reverse={true}
       />
@@ -77,7 +77,7 @@ export default function LowCode() {
               description="Sistema de tickets y gestión de incidencias internas que centraliza las solicitudes de soporte técnico. Automatiza la asignación de técnicos según el tipo de incidencia y permite el seguimiento del SLA en tiempo real."
               technologies={['Power Apps', 'Power Automate', 'SharePoint', 'Microsoft Teams']}
               image={supportImg}
-              demoUrl="#"
+              demoUrl="https://youtu.be/4R2VYDvtbOc"
             />
 
             <SecondaryLowCodeProject
@@ -85,7 +85,7 @@ export default function LowCode() {
               description="Tablero kanban personalizado para la gestión de tareas de equipos de trabajo. Permite visualizar el flujo de trabajo, asignar responsabilidades y recibir alertas automáticas cuando las tareas están próximas a vencer."
               technologies={['Power Apps', 'Power Automate', 'SharePoint']}
               image={tareasImg}
-              demoUrl="#"
+              demoUrl="https://youtu.be/_z6mExeutWI"
             />
 
             <SecondaryLowCodeProject
@@ -93,7 +93,7 @@ export default function LowCode() {
               description="Flujo automatizado para el proceso de incorporación de nuevos empleados. Coordina múltiples departamentos (RRHH, IT, Administración) para garantizar que todos los accesos, herramientas y documentación estén listos antes del primer día."
               technologies={['Power Automate', 'Microsoft 365', 'SharePoint', 'Outlook']}
               image={empleadosImg}
-              demoUrl="#"
+              demoUrl="https://youtu.be/RBD0Bf9_Qw8"
             />
           </div>
           

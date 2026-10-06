@@ -71,6 +71,8 @@ export default function Software() {
           'Sistema de usuarios',
         ]}
         image={airaImg}
+        videoUrl="https://youtu.be/4DfSrDz9WaA"
+        videoLabel="Ver demostración en vídeo"           
         demoUrl="https://drive.google.com/drive/folders/1zKBjgOIYhPYyousq4gOFPGMc1X-ZFsza?usp=sharing"
         demoLabel="Descargar Proyecto"
         githubUrl="https://github.com/kaigallardo/AiraERP"
