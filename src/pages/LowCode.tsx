@@ -36,7 +36,7 @@ export default function LowCode() {
           'Historial completo de asistencia y cambios',
         ]}
         image={agoraImg}
-        demoUrl="https://youtu.be/u8CjQVFIzG4"
+        demoUrl="https://drive.google.com/file/d/1Gsea7WoN0LV4jsFIvVhY6mNFOyA2ytxe/view?usp=sharing"
         demoLabel="Ver demostración en vídeo"
       />
 

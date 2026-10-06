@@ -34,7 +34,7 @@ export default function Robotics() {
           'Simulación de procesos industriales reales',
         ]}
         // image={tiaImg}
-        demoUrl="#"
+        demoUrl="https://youtu.be/Hi8TyRJGlt4"
         demoLabel="Ver demostración en vídeo"
       />
 
